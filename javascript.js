@@ -1,7 +1,7 @@
 const screen_container = document.getElementById("screen");
 const square = document.createElement('div');
 
-let grid_size = 72;
+let grid_size = 256;
 
 // For loop based on grid size
 for (i=0; i<grid_size; i++) {
