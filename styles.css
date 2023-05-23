@@ -28,17 +28,6 @@ footer {
 }
 
 
-/* .container {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    /* justify-content: center; */
-    /* margin-top: 100px; */
-
 main {
     display: flex;
     flex-direction: column;
@@ -61,20 +50,32 @@ main {
 
 #screen {
     width: 500px;
-    height: 400px;
+    height: 420px;
+    padding: 8px;
     background-color: lightgray;
     border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: auto;
+    align-content: start;
 }
 
-#screen-container {
-    width: 480px;
-    height: 380px;
-    display: grid;
-}
-
-
-.square {
+/* This is our 'empty' cell square */
+#square {
     width: 50px;
     height: 50px;
-    background-color: beige;
+    background-color: lightgrey;
+    flex: 0 0 auto;
+    margin: 1px;
+}
+
+/* And this is it once hovered over */
+#hovered {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(56, 56, 56);
+    flex: 0 0 auto;
+    margin: 1px;
 }
