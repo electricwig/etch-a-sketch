@@ -1,0 +1,67 @@
+body {
+    height: 100%;
+    padding:0;
+    margin:0;
+    background-color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    background-color: cadetblue;
+}
+
+
+header {
+    height: 50px;
+    top: 0;
+}
+
+
+footer {
+    height: 50px;
+    bottom: 0;
+}
+
+
+/* .container {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* justify-content: center; */
+    /* margin-top: 100px; */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+.etch-a-sketch {
+    width: 600px;
+    height: 600px;
+    background-color: red;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.screen {
+    width: 500px;
+    height: 400px;
+    background-color: lightgray;
+    border-radius: 20px;
+}
