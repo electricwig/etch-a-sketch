@@ -37,9 +37,15 @@ main {
 }
 
 
+h3 {
+    font-size: 1vw;
+}
+
+
 .etch-a-sketch {
-    width: 600px;
-    height: 680px;
+    width: 30vw;
+    height: 60vh;
+    padding-bottom: 5%;
     background-color: red;
     border-radius: 30px;
     display: flex;
@@ -49,33 +55,25 @@ main {
 
 
 #screen {
-    width: 500px;
-    height: 480px;
+    width: 80%;
+    height: 80%;
     padding: 8px;
     background-color: lightgray;
     border-radius: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: auto;
-    align-content: start;
+    display: grid;
+    grid-template-columns: repeat(16, [col-start] 1fr);
 }
 
 /* This is our 'empty' cell square */
 #square {
-    width: 28px;
-    height: 28px;
-    background-color: lightgrey;
-    flex: 0 0 auto;
-    margin: 1px;
+    width: 100%;
+    height: auto;
+    background-color: lightgray;
 }
 
 /* And this is it once hovered over */
 #hovered {
-    width: 28px;
-    height: 28px;
+    width: 100%;
+    height: auto;
     background-color: rgb(56, 56, 56);
-    flex: 0 0 auto;
-    margin: 1px;
 }
