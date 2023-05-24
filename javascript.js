@@ -1,10 +1,12 @@
-const screen_container = document.getElementById("screen");
+const screenContainer = document.getElementById("screen");
 const square = document.createElement('div');
 
-let grid_size = 256;
+
+let gridSize = 256;
+
 
 // For loop based on grid size
-for (i=0; i<grid_size; i++) {
+for (i=0; i<gridSize; i++) {
     // create a div
     let cell = document.createElement("div");
     // give it the id of square
@@ -18,5 +20,5 @@ for (i=0; i<grid_size; i++) {
         cell.cell.id = "hovered";
     });
     // add div to container
-    screen_container.appendChild(cell);
+    screenContainer.appendChild(cell);
 }
