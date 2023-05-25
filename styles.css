@@ -44,7 +44,7 @@ h3 {
 
 #etch-a-sketch {
     width: 30vw;
-    height: 60vh;
+    height: 65vh;
     padding-bottom: 5%;
     background-color: red;
     border-radius: 30px;
@@ -54,14 +54,29 @@ h3 {
 }
 
 
-#screen {
+#screen-container {
     width: 80%;
     height: 80%;
+    display: flex;
+}
+
+
+#screen {
+    width: 100%;
+    height: 100%;
     padding: 8px;
+    aspect-ratio: 1 / 1;
     background-color: lightblue;
     border-radius: 20px;
     display: grid;
 }
+
+
+.toolbar {
+    margin-top: 12%;
+    display: flex;
+}
+
 
 /* This is our 'empty' cell square */
 #square {
