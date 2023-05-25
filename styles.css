@@ -39,12 +39,15 @@ main {
 
 h3 {
     font-size: 1vw;
+    color: gold;
 }
 
 
 #etch-a-sketch {
     width: 30vw;
     height: 65vh;
+    /* padding-left: 40px; */
+    padding-right: 1%;
     padding-bottom: 5%;
     background-color: red;
     border-radius: 30px;
@@ -77,6 +80,13 @@ h3 {
     display: flex;
 }
 
+.toolbar button {
+    background-color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    border-radius: 20px;
+
+}
 
 /* This is our 'empty' cell square */
 #square {
