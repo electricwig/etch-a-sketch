@@ -79,6 +79,7 @@ h3 {
 .toolbar {
     margin-top: 12%;
     display: flex;
+    align-items: baseline;
 }
 
 .toolbar button {
@@ -87,6 +88,25 @@ h3 {
     padding: 10px;
     border-radius: 20px;
 
+}
+
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 5px; /* Specified height */
+  background: aliceblue; 
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: aliceblue; /* Green background */
+  border-radius: 8px;
+  cursor: pointer; /* Cursor on hover */
 }
 
 /* This is our 'empty' cell square */
