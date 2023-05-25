@@ -42,7 +42,7 @@ h3 {
 }
 
 
-.etch-a-sketch {
+#etch-a-sketch {
     width: 30vw;
     height: 60vh;
     padding-bottom: 5%;
@@ -58,17 +58,16 @@ h3 {
     width: 80%;
     height: 80%;
     padding: 8px;
-    background-color: lightgray;
+    background-color: lightblue;
     border-radius: 20px;
     display: grid;
-    grid-template-columns: repeat(16, [col-start] 1fr);
 }
 
 /* This is our 'empty' cell square */
 #square {
     width: 100%;
     height: auto;
-    background-color: lightgray;
+    background-color: lightblue;
 }
 
 /* And this is it once hovered over */
