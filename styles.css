@@ -82,6 +82,7 @@ h3 {
     align-items: baseline;
 }
 
+
 .toolbar button {
     background-color: aliceblue;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -89,6 +90,7 @@ h3 {
     border-radius: 20px;
 
 }
+
 
 .slider {
   -webkit-appearance: none;  /* Override default CSS styles */
@@ -109,12 +111,14 @@ h3 {
   cursor: pointer; /* Cursor on hover */
 }
 
+
 /* This is our 'empty' cell square */
 #square {
     width: 100%;
     height: auto;
     background-color: lightblue;
 }
+
 
 /* And this is it once hovered over */
 #hovered {
