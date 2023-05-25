@@ -12,6 +12,7 @@ header, footer {
     justify-content: center;
     position: absolute;
     width: 100%;
+    color: aliceblue;
     background-color: lightblue;
 }
 
