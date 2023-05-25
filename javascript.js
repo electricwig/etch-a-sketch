@@ -16,6 +16,9 @@ let gridSize = gridNo * gridNo;
 // Display our starting grid
 setGridSize(16);
 
+// Set the slider
+slider.value = 16;
+
 
 
 // ** MAIN GRID FUNCTIONS **
@@ -49,12 +52,17 @@ function newGrid () {
         // give it the id of square
         cell.id = "square";
         // change css on mouseover
-        cell.addEventListener('mouseover', function handleMouseOver() {
-            cell.id = "hovered";
+        cell.addEventListener('mouseover', function handleMouseOver(e) {
+            // check for mouse button
+            if(e.buttons == 1){
+               cell.id = "hovered";
+            }
         });
         // also change css on mouseout so it remains grey
-        cell.addEventListener('mouseout', function handleMouseOut() {
-            cell.id = "hovered";
+        cell.addEventListener('mouseout', function handleMouseOut(e) {
+            if(e.buttons == 1){
+               cell.id = "hovered";
+            }
         });
         // add div to container
         grid.appendChild(cell);
