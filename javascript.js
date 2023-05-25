@@ -51,6 +51,13 @@ function newGrid () {
         let cell = document.createElement("div");
         // give it the id of square
         cell.id = "square";
+        // to do: change css on CLICK
+        cell.addEventListener('mousedown', function handleMouseDown(e) {
+            // check for mouse button
+            if(e.buttons == 1){
+               cell.id = "hovered";
+            }
+        });
         // change css on mouseover
         cell.addEventListener('mouseover', function handleMouseOver(e) {
             // check for mouse button
