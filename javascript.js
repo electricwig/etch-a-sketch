@@ -1,10 +1,23 @@
-const screenContainer = document.getElementById("etch-a-sketch");
+const screenContainer = document.getElementById("screen-container");
 const square = document.createElement('div');
+const clearScreen = document.getElementById("clear");
+
+// add clearScreen function to our Clear button
+clearScreen.addEventListener('click', clearGrid);
+
+
+// ** INIT **
 
 // Start grid off at 16 x 16
 let gridNo = 16;
 let gridSize = gridNo * gridNo;
 
+// Display our starting grid
+newGrid(16);
+
+
+
+// ** MAIN GRID FUNCTIONS **
 
 // Simple function to remove previous grid
 function removeGrid () {
@@ -40,7 +53,7 @@ function newGrid () {
         });
         // also change css on mouseout so it remains grey
         cell.addEventListener('mouseout', function handleMouseOut() {
-            cell.cell.id = "hovered";
+            cell.id = "hovered";
         });
         // add div to container
         grid.appendChild(cell);
@@ -49,8 +62,19 @@ function newGrid () {
 }
 
 
-// Start off with a 16 x 16 grid
-newGrid(16);
+
+// ** TOOLBAR FUNCTIONS **
+
+// Function to clear current grid
+function clearGrid () {
+    // First get a nodeList of all 'hovered' squares by id
+    const drawnSquares = document.querySelectorAll("#hovered");
+    // Then loop over them
+    for (let i = 0; i < drawnSquares.length; i++) {
+        // and change their id back to square
+        drawnSquares[i].id = "square";
+    }
+}   
 
 
 
