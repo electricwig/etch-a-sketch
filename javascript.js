@@ -1,9 +1,13 @@
-const screenContainer = document.getElementById("screen");
+const screenContainer = document.getElementById("etch-a-sketch");
 const square = document.createElement('div');
 
+let gridNo = 50;
+let gridSize = gridNo * gridNo;
 
-let gridSize = 256;
-
+let grid = document.createElement("div");
+grid.id = "screen";
+grid.style.gridTemplateColumns = "repeat(" + gridNo + ", [col-start] 1fr)";
+screenContainer.appendChild(grid);
 
 // For loop based on grid size
 for (i=0; i<gridSize; i++) {
@@ -20,5 +24,5 @@ for (i=0; i<gridSize; i++) {
         cell.cell.id = "hovered";
     });
     // add div to container
-    screenContainer.appendChild(cell);
+    grid.appendChild(cell);
 }
