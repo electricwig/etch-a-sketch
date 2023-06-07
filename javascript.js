@@ -2,6 +2,7 @@ const screenContainer = document.getElementById("screen-container");
 const square = document.createElement('div');
 const clearScreen = document.getElementById("clear");
 const slider = document.getElementById("myRange");
+let sliderValue = document.getElementById("sliderValue")
 
 // add clearScreen function to our Clear button
 clearScreen.addEventListener('click', clearGrid);
@@ -18,6 +19,9 @@ setGridSize(16);
 
 // Set the slider
 slider.value = 16;
+
+// Set the text area to show slider value
+sliderValue.innerText = slider.value
 
 
 
@@ -92,9 +96,10 @@ function clearGrid () {
     }
 }   
 
-
+// Function to change grid size via slider
 slider.oninput = function() {
     removeGrid();
     setGridSize(this.value);
+    sliderValue.innerHTML = slider.value;       
 }
 
